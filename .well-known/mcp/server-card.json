@@ -1,0 +1,49 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/server-card/v1.json",
+  "serverInfo": {
+    "name": "Fifty Bar Vape",
+    "version": "1.0.0",
+    "description": "The only disposable vape built and filled in the USA. 7 collections, 70+ American-made flavors.",
+    "homepage": "https://thefiftybar.org",
+    "contact": {
+      "email": "info@thefiftybar.org",
+      "phone": "+15627324044"
+    }
+  },
+  "transport": {
+    "type": "none",
+    "note": "Static site — no live MCP endpoint. Resources below are HTML pages only."
+  },
+  "capabilities": {
+    "resources": [
+      {
+        "name": "product-catalog",
+        "description": "Full product catalog across 7 collections",
+        "uri": "https://thefiftybar.org/shop/"
+      },
+      {
+        "name": "wholesale-info",
+        "description": "Wholesale pricing and partner information",
+        "uri": "https://thefiftybar.org/wholesale/"
+      },
+      {
+        "name": "blog",
+        "description": "Flavor guides, reviews, and troubleshooting content",
+        "uri": "https://thefiftybar.org/blog/"
+      }
+    ],
+    "commerce": {
+      "ordering": "human_ordering_only",
+      "payment": ["apple-pay", "cash-app", "chime", "crypto-BTC", "crypto-ETH", "crypto-LTC"],
+      "currency": "USD",
+      "minimumOrder": "150",
+      "freeShipping": "250",
+      "ships": "United States"
+    }
+  },
+  "legal": {
+    "ageRestriction": "21+",
+    "productType": "Disposable nicotine vapes",
+    "compliance": "Nicotine is an addictive chemical. For adult use only. Must be 21+ to purchase."
+  }
+}

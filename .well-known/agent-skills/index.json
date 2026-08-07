@@ -1,0 +1,43 @@
+{
+  "$schema": "https://agentskills.io/schema/v0.2.0/index.json",
+  "name": "Fifty Bar Vape",
+  "url": "https://thefiftybar.org",
+  "description": "Premium Vapes — Built In The USA. The only disposable vape built and filled in the USA, 70+ flavors across 7 collections.",
+  "skills": [
+    {
+      "name": "browse-products",
+      "type": "navigation",
+      "description": "Browse the full Fifty Bar Vape catalog by collection: Original Series, White Series, Black Series 20K, Fruitia x 20K, Humble x Fifty Bar, Hidden Hills x Fifty Bar, Midnight Series",
+      "url": "https://thefiftybar.org/shop/",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "check-order-policies",
+      "type": "commerce",
+      "description": "Check minimum order ($150), free shipping threshold ($250+), accepted payment methods (Apple Pay, Cash App, Chime, BTC/ETH/LTC), and the 10% crypto discount. Ordering is human-assisted at /checkout/ — no live purchase API.",
+      "url": "https://thefiftybar.org/how-to-order/",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "wholesale-inquiry",
+      "type": "commerce",
+      "description": "Wholesale partner information for retailers wanting to stock Fifty Bar Vape products",
+      "url": "https://thefiftybar.org/wholesale/",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "flavor-guides",
+      "type": "content",
+      "description": "Educational blog content: flavor reviews, puff-count comparisons, troubleshooting guides, and buying guides",
+      "url": "https://thefiftybar.org/blog/",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "contact-support",
+      "type": "support",
+      "description": "Contact Fifty Bar Vape for order support, product questions, or wholesale inquiries",
+      "url": "https://thefiftybar.org/contact/",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

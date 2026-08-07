@@ -8,28 +8,47 @@ Disallow: /wp-admin/
 Disallow: /wp-content/
 Disallow: /wp-includes/
 
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
 # ── AI / LLM crawlers: explicitly allowed (citation visibility) ──
 User-agent: GPTBot
 Allow: /
+Disallow: /checkout/
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /checkout/
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /checkout/
 User-agent: ClaudeBot
 Allow: /
+Disallow: /checkout/
 User-agent: anthropic-ai
 Allow: /
+Disallow: /checkout/
 User-agent: Claude-Web
 Allow: /
+Disallow: /checkout/
 User-agent: PerplexityBot
 Allow: /
+Disallow: /checkout/
 User-agent: Perplexity-User
 Allow: /
+Disallow: /checkout/
 User-agent: Google-Extended
 Allow: /
+Disallow: /checkout/
 User-agent: CCBot
 Allow: /
+Disallow: /checkout/
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /checkout/
+
+# Agent-readable resources
+# llms.txt: https://thefiftybar.org/llms.txt
+# API Catalog: https://thefiftybar.org/.well-known/api-catalog
+# Agent Skills: https://thefiftybar.org/.well-known/agent-skills/index.json
+# MCP Server Card: https://thefiftybar.org/.well-known/mcp/server-card.json
 
 Sitemap: https://thefiftybar.org/sitemap.xml

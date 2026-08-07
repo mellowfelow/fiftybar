@@ -1,0 +1,46 @@
+{
+  "ucp": "1.0",
+  "protocol_version": "1.0",
+  "spec": "https://ucp.dev/specification/overview/",
+  "schema": "https://ucp.dev/schema/v1.json",
+  "site": "https://thefiftybar.org",
+  "name": "Fifty Bar Vape",
+  "description": "The only disposable vape built and filled in the USA. 7 collections, 70+ American-made flavors.",
+  "services": [
+    {
+      "id": "product-catalog",
+      "type": "catalog",
+      "url": "https://thefiftybar.org/shop/",
+      "description": "Full product catalog across 7 collections"
+    },
+    {
+      "id": "order",
+      "type": "commerce",
+      "url": "https://thefiftybar.org/checkout/",
+      "description": "Human-assisted checkout — cart review and manual payment, no live purchase API"
+    },
+    {
+      "id": "wholesale",
+      "type": "b2b",
+      "url": "https://thefiftybar.org/wholesale/",
+      "description": "Wholesale partner information"
+    }
+  ],
+  "capabilities": ["browse", "inquiry", "wholesale", "content"],
+  "endpoints": {
+    "catalog": "https://thefiftybar.org/shop/",
+    "contact": "https://thefiftybar.org/contact/",
+    "agent_skills": "https://thefiftybar.org/.well-known/agent-skills/index.json",
+    "mcp_server_card": "https://thefiftybar.org/.well-known/mcp/server-card.json",
+    "api_catalog": "https://thefiftybar.org/.well-known/api-catalog",
+    "llms_txt": "https://thefiftybar.org/llms.txt"
+  },
+  "currency": "USD",
+  "minimum_order_usd": "150",
+  "payment_methods": ["apple-pay", "cash-app", "chime", "crypto-BTC", "crypto-ETH", "crypto-LTC"],
+  "legal": {
+    "age_restriction": "21+",
+    "product_type": "Disposable nicotine vapes",
+    "compliance": "Nicotine is an addictive chemical. For adult use only. Must be 21+ to purchase."
+  }
+}

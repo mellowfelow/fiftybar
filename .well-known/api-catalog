@@ -1,0 +1,31 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://thefiftybar.org/",
+      "https://www.iana.org/assignments/link-relations/service-doc": [
+        { "href": "https://thefiftybar.org/faq/" }
+      ],
+      "title": "Fifty Bar Vape — Premium Vapes, Built In The USA"
+    },
+    {
+      "anchor": "https://thefiftybar.org/shop/",
+      "type": "text/html",
+      "title": "Fifty Bar Vape Product Catalog — 70+ flavors across 7 collections"
+    },
+    {
+      "anchor": "https://thefiftybar.org/wholesale/",
+      "type": "text/html",
+      "title": "Fifty Bar Vape Wholesale"
+    },
+    {
+      "anchor": "https://thefiftybar.org/how-to-order/",
+      "type": "text/html",
+      "title": "Fifty Bar Vape — Ordering, Shipping & Payment Guide"
+    },
+    {
+      "anchor": "https://thefiftybar.org/blog/",
+      "type": "text/html",
+      "title": "Fifty Bar Vape Blog — Flavor Guides & Reviews"
+    }
+  ]
+}
