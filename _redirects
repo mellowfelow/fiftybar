@@ -1,0 +1,61 @@
+# ================================================================
+# Fifty Bar Vape — Cloudflare Pages Redirects
+# IMPORTANT: More specific paths MUST come before less specific ones
+# ================================================================
+
+# ── BLOG POSTS: old WP root-level slugs → /blog/slug/ ──────────────
+# These MUST be listed before any short slug rules
+/fifty-bar-x-fruitia-best-fruit-flavored-vapes-fruitia-20k-review/    /blog/fifty-bar-x-fruitia-best-fruit-flavored-vapes-fruitia-20k-review/    301
+/fifty-bar-x-fruitia-best-fruit-flavored-vapes-fruitia-20k-review     /blog/fifty-bar-x-fruitia-best-fruit-flavored-vapes-fruitia-20k-review/    301
+/fifty-bar-white-series-smooth-vape-flavors-fifty-bar-reviews/         /blog/fifty-bar-white-series-smooth-vape-flavors-fifty-bar-reviews/         301
+/fifty-bar-white-series-smooth-vape-flavors-fifty-bar-reviews          /blog/fifty-bar-white-series-smooth-vape-flavors-fifty-bar-reviews/         301
+/fifty-bar-blinking-light-a-quick-troubleshooting-guide/               /blog/fifty-bar-blinking-light-a-quick-troubleshooting-guide/               301
+/fifty-bar-blinking-light-a-quick-troubleshooting-guide                /blog/fifty-bar-blinking-light-a-quick-troubleshooting-guide/               301
+/how-beard-vape-co-perfected-the-original/                             /blog/how-beard-vape-co-perfected-the-original/                             301
+/how-beard-vape-co-perfected-the-original                              /blog/how-beard-vape-co-perfected-the-original/                             301
+/fifty-bar-vape-near-me/                                               /blog/fifty-bar-vape-near-me/                                               301
+/fifty-bar-vape-near-me                                                /blog/fifty-bar-vape-near-me/                                               301
+/fifty-bar-vape-flavors/                                               /blog/fifty-bar-vape-flavors/                                               301
+/fifty-bar-vape-flavors                                                /blog/fifty-bar-vape-flavors/                                               301
+/fifty-bar-puff-count/                                                 /blog/fifty-bar-puff-count/                                                 301
+/fifty-bar-puff-count                                                  /blog/fifty-bar-puff-count/                                                 301
+/fifty-bar-flavors/                                                    /blog/fifty-bar-flavors/                                                    301
+/fifty-bar-flavors                                                     /blog/fifty-bar-flavors/                                                    301
+/fifty-bar-vapes/                                                      /blog/fifty-bar-vapes/                                                      301
+/fifty-bar-vapes                                                       /blog/fifty-bar-vapes/                                                      301
+/fifty-bar-20k/                                                        /blog/fifty-bar-20k/                                                        301
+/fifty-bar-20k                                                         /blog/fifty-bar-20k/                                                        301
+/fifty-bar/                                                            /blog/fifty-bar/                                                            301
+/fifty-bar                                                             /blog/fifty-bar/                                                            301
+
+# ── COLLECTION URLs: old WP paths → /shop/category/ ────────────────
+/fifty-bar-x-hidden-hills/        /shop/hidden-hills/              301
+/fifty-bar-x-hidden-hills         /shop/hidden-hills/              301
+/fifty-bar-x-humble/              /shop/humble/                    301
+/fifty-bar-x-humble               /shop/humble/                    301
+/fifty-bar-x-fruitia/             /shop/fruitia/                   301
+/fifty-bar-x-fruitia              /shop/fruitia/                   301
+/midnight-series/                 /shop/midnight-series/           301
+/midnight-series                  /shop/midnight-series/           301
+/black-series/                    /shop/black-series/              301
+/black-series                     /shop/black-series/              301
+/white-series/                    /shop/white-series/              301
+/white-series                     /shop/white-series/              301
+/original-series/                 /shop/original-series/           301
+/original-series                  /shop/original-series/           301
+/products/                        /shop/                           301
+
+# ── OTHER OLD WP URLS ───────────────────────────────────────────────
+/contact-us/                      /contact/                        301
+/contact-us                       /contact/                        301
+/about-us/                        /about/                          301
+/about-us                         /about/                          301
+/news/                            /blog/                           301
+/news                             /blog/                           301
+/shop-now/                        /shop/                           301
+/shop-now                         /shop/                           301
+/advocacy/                        /about/                          301
+/feed/                            /sitemap.xml                     301
+/feed                             /sitemap.xml                     301
+/wp-admin/*                       /                                301
+/wp-content/*                     /                                301

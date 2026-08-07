@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="theme-color" content="#C8272A">
+  <title>Checkout | Fifty Bar Vape</title>
+  <meta name="description" content="Secure checkout. Min $150 order, free shipping $250+, 10% crypto discount. Apple Pay, Cash App, Chime, BTC/ETH/LTC.">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="canonical" href="https://thefiftybar.org/checkout/">
+  <link rel="icon" href="/images/logo.webp" type="image/webp">
+  <link rel="apple-touch-icon" href="/images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="//formspree.io">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500;600&display=swap"></noscript>
+  <link rel="stylesheet" href="/css/style.css?v=3">
+</head>
+<body>
+<a href="#main" class="sr-only">Skip to main content</a>
+
+<div id="age-gate"><div class="ag-stars">★ ★ ★ ★ ★</div><div class="ag-logo">FIFTY <span>BAR</span></div><p class="ag-sub">Premium Vapes — Built In The USA</p><div class="ag-warning">You must be <strong>21 years or older</strong> to enter.</div><div class="ag-btns"><button class="ag-btn-yes" id="ag-yes">I AM 21 OR OLDER</button><button class="ag-btn-no" id="ag-no">EXIT</button></div><p class="ag-legal">WARNING: Nicotine is an addictive chemical. For adult use only.</p></div>
+
+<div class="ann-bar"><div class="ann-bar-items">🇺🇸 American Made<span class="ann-bar-sep">|</span>🚚 Free Shipping $250+<span class="ann-bar-sep">|</span>💰 Min Order $150<span class="ann-bar-sep">|</span>₿ 10% Crypto Discount<span class="ann-bar-sep">|</span><a href="tel:+15627324044">(562) 732-4044</a></div></div>
+
+<header class="site-header">
+  <a href="/" class="header-logo"><img src="/images/logo.webp" alt="Fifty Bar Vape" class="logo-img"><div class="logo-text-wrap"><span class="logo-wm">FIFTY <span class="bar">BAR</span></span><span class="logo-tag">Premium Vapes · Built In The USA</span></div></a>
+  <nav class="site-nav"><a href="/">Home</a><a href="/shop/">Shop</a><a href="/about/">About</a><a href="/how-to-order/">How To Order</a><a href="/blog/">Blog</a><a href="/faq/">FAQ</a><a href="/wholesale/">Wholesale</a><a href="/contact/" class="nav-cta">Contact</a></nav>
+  <div class="nav-icons">
+    <button class="nav-icon-btn cart-icon-btn" aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg><span class="cart-badge" style="display:none">0</span></button>
+    <div class="header-phone" style="margin-left:8px"><a href="tel:+15627324044">(562) 732-4044</a></div>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+
+<nav class="mobile-nav" id="mobile-nav"><a href="/" class="m-shop">🏠 Home</a><a href="/shop/" class="m-shop">🛒 Shop All</a><div class="m-divider">Collections</div><a href="/shop/original-series/">Original Series</a><a href="/shop/white-series/">White Series</a><a href="/shop/black-series/">Black Series 20K</a><a href="/shop/fruitia/">Fruitia × 20K</a><a href="/shop/humble/">Humble × Fifty Bar</a><a href="/shop/hidden-hills/">Hidden Hills</a><a href="/shop/midnight-series/">🌙 Midnight Series</a><div class="m-divider">Info</div><a href="/about/">About</a><a href="/how-to-order/">How To Order</a><a href="/blog/">Blog</a><a href="/faq/">FAQ</a><a href="/wholesale/">Wholesale</a><a href="/contact/" class="m-shop">Contact</a></nav>
+
+<div class="cart-overlay" id="cart-overlay"></div>
+<aside class="cart-drawer" id="cart-drawer" role="dialog"><div class="cart-header"><h2>YOUR CART</h2><button class="cart-close" onclick="Cart.close()">×</button></div><div class="cart-items" id="cart-items"></div><div class="cart-footer" id="cart-totals"></div></aside>
+
+<main id="main">
+
+<!-- Page hero -->
+<div style="background:linear-gradient(135deg,var(--hero-dk) 0%,var(--hero-mid) 100%);padding:36px 40px 32px">
+  <div style="max-width:1100px;margin:0 auto">
+    <nav class="bc"><a href="/">Home</a><span class="bc-sep">/</span><a href="/shop/">Shop</a><span class="bc-sep">/</span><span aria-current="page">Checkout</span></nav>
+    <h1 style="font-family:var(--fd);font-size:clamp(32px,5vw,56px);letter-spacing:.02em;color:var(--white);line-height:.92;margin-top:12px">PLACE YOUR <em style="color:var(--red);font-style:normal">ORDER</em></h1>
+    <p style="color:rgba(255,255,255,.65);font-size:14px;margin-top:8px">Min. $150 &nbsp;·&nbsp; Free shipping $250+ &nbsp;·&nbsp; 10% off with crypto &nbsp;·&nbsp; American made</p>
+  </div>
+</div>
+
+<!-- Success screen (hidden until order placed) -->
+<div id="checkout-success" style="display:none;padding:80px 40px;text-align:center;background:var(--black)">
+  <div style="font-size:72px;margin-bottom:24px">✅</div>
+  <h2 style="font-family:var(--fd);font-size:clamp(36px,6vw,60px);letter-spacing:.04em;color:var(--white);margin-bottom:16px">ORDER PLACED!</h2>
+  <div style="background:var(--dark2);border:1px solid rgba(255,255,255,.1);border-radius:var(--rl);padding:20px 32px;display:inline-block;margin-bottom:24px">
+    <p style="font-family:var(--fc);font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--silver);margin-bottom:6px">Your Order Number</p>
+    <p id="success-order-number" style="font-family:var(--fd);font-size:32px;letter-spacing:.08em;color:var(--red)">FBV-XXXXXX</p>
+    <p style="font-size:12px;color:var(--silver);margin-top:4px">Save this number for your records</p>
+  </div>
+  <p style="font-size:16px;color:var(--silver);line-height:1.7;max-width:480px;margin:0 auto 12px">Thank you! We have received your order and will contact you shortly with payment instructions and shipping details.</p>
+  <p style="font-size:14px;color:var(--silver);max-width:480px;margin:0 auto 28px">Questions? Call or text <a href="tel:+15627324044" style="color:var(--red)">(562) 732-4044</a> or email <a href="mailto:info@thefiftybar.org" style="color:var(--red)">info@thefiftybar.org</a></p>
+  <a href="/shop/" class="btn btn-primary btn-lg">Continue Shopping</a>
+</div>
+
+<!-- Checkout form -->
+<div id="checkout-form-wrap" style="background:var(--black);padding:56px 40px">
+  <div class="checkout-layout">
+
+    <!-- LEFT: Form -->
+    <div class="checkout-form-section">
+      <h2>YOUR INFORMATION</h2>
+
+      <!-- NOTE: NO action= or method= so browser never does native POST -->
+      <form id="checkout-form" novalidate>
+
+        <p class="form-section-head">Contact Details</p>
+        <div class="fr">
+          <div class="fg"><label for="co-fname">First Name *</label><input type="text" id="co-fname" name="fname" required autocomplete="given-name" placeholder="John"></div>
+          <div class="fg"><label for="co-lname">Last Name *</label><input type="text" id="co-lname" name="lname" required autocomplete="family-name" placeholder="Smith"></div>
+        </div>
+        <div class="fg"><label for="co-email">Email Address *</label><input type="email" id="co-email" name="email" required autocomplete="email" placeholder="john@email.com"></div>
+        <div class="fg"><label for="co-phone">Phone Number</label><input type="tel" id="co-phone" name="phone" autocomplete="tel" placeholder="(555) 000-0000"></div>
+
+        <p class="form-section-head">Shipping Address</p>
+        <div class="fg"><label for="co-addr">Street Address *</label><input type="text" id="co-addr" name="address" required autocomplete="street-address" placeholder="123 Main Street"></div>
+        <div class="fr">
+          <div class="fg"><label for="co-city">City *</label><input type="text" id="co-city" name="city" required autocomplete="address-level2" placeholder="Los Angeles"></div>
+          <div class="fg"><label for="co-state">State *</label><input type="text" id="co-state" name="state" required autocomplete="address-level1" placeholder="CA" maxlength="2"></div>
+        </div>
+        <div class="fg" style="max-width:180px"><label for="co-zip">ZIP Code *</label><input type="text" id="co-zip" name="zip" required autocomplete="postal-code" placeholder="90210" pattern="[0-9]{5}"></div>
+
+        <p class="form-section-head">Payment Method</p>
+        <p style="font-size:13px;color:var(--silver);margin-bottom:14px;line-height:1.5">Select payment. Crypto = automatic 10% discount.</p>
+        <div class="pay-options" id="pay-options">
+          <div class="pay-option"><input type="radio" name="pay_method" id="pay-apple" value="apple-pay"><label for="pay-apple"><span class="pay-option-icon">🍎</span><span class="pay-option-name">Apple Pay</span><span class="pay-option-sub">Instant &amp; secure</span></label></div>
+          <div class="pay-option"><input type="radio" name="pay_method" id="pay-cashapp" value="cash-app"><label for="pay-cashapp"><span class="pay-option-icon">💵</span><span class="pay-option-name">Cash App</span><span class="pay-option-sub">Send via $cashtag</span></label></div>
+          <div class="pay-option"><input type="radio" name="pay_method" id="pay-chime" value="chime"><label for="pay-chime"><span class="pay-option-icon">🏦</span><span class="pay-option-name">Chime</span><span class="pay-option-sub">Chime Visa Debit</span></label></div>
+          <div class="pay-option"><input type="radio" name="pay_method" id="pay-btc" value="crypto"><label for="pay-btc"><span class="pay-option-icon">₿</span><span class="pay-option-name">Bitcoin / ETH / LTC</span><span class="pay-option-sub" style="color:#3DB35A;font-weight:700">Save 10%!</span></label></div>
+        </div>
+
+        <div class="fg" style="margin-top:16px">
+          <label for="co-notes">Special Instructions (optional)</label>
+          <textarea id="co-notes" name="notes" placeholder="Any special requests…" style="min-height:80px"></textarea>
+        </div>
+
+        <div style="background:rgba(200,39,42,.07);border:1px solid rgba(200,39,42,.18);border-radius:var(--r);padding:14px;margin-top:4px;font-size:13px;color:var(--silver);line-height:1.6">
+          🔒 After placing your order you will receive an email with payment instructions. Send payment and screenshot to confirm — ships same day if confirmed before 2 PM PST.
+        </div>
+
+        <button type="button" id="place-order-btn" class="checkout-submit" onclick="handlePlaceOrder()">Place Order →</button>
+      </form>
+    </div>
+
+    <!-- RIGHT: Order summary sidebar -->
+    <div class="co-sidebar">
+      <div class="co-sidebar-card">
+        <h3>ORDER SUMMARY</h3>
+        <div id="checkout-items"><p style="color:var(--silver);font-size:14px">Loading cart…</p></div>
+      </div>
+      <div class="co-sidebar-card" id="checkout-totals" style="padding:20px"></div>
+    </div>
+
+  </div>
+</div>
+
+</main>
+
+<section class="nl-section"><div class="si"><p class="sl" style="justify-content:center">Stay Connected</p><h2 class="st" style="text-align:center">JOIN THE <em>COMMUNITY</em></h2><p style="color:var(--silver);font-size:15px;max-width:380px;margin:0 auto;line-height:1.65">New flavor drops and exclusive deals to your inbox.</p><form class="nl-form newsletter-form" novalidate><label for="nl-co" class="sr-only">Email</label><input type="email" id="nl-co" name="email" placeholder="your@email.com" required><button type="submit" class="btn btn-primary">Subscribe</button></form></div></section>
+
+<footer class="site-footer"><div class="foot-grid"><div class="foot-brand"><div class="foot-logo">FIFTY <span>BAR</span></div><p>The only disposable vape built and filled in the USA.</p><div class="foot-contact"><span class="foot-icon">📞</span><a href="tel:+15627324044">(562) 732-4044</a></div><div class="foot-contact"><span class="foot-icon">✉️</span><a href="mailto:info@thefiftybar.org">info@thefiftybar.org</a></div></div><div class="foot-col"><h4>Collections</h4><ul><li><a href="/shop/original-series/">Original Series</a></li><li><a href="/shop/white-series/">White Series</a></li><li><a href="/shop/black-series/">Black Series</a></li><li><a href="/shop/fruitia/">Fruitia × 20K</a></li><li><a href="/shop/humble/">Humble × Fifty Bar</a></li><li><a href="/shop/hidden-hills/">Hidden Hills</a></li><li><a href="/shop/midnight-series/">🌙 Midnight Series</a></li></ul></div><div class="foot-col"><h4>Quick Links</h4><ul><li><a href="/">Home</a></li><li><a href="/shop/">Shop All</a></li><li><a href="/about/">About</a></li><li><a href="/how-to-order/">How To Order</a></li><li><a href="/blog/">Blog</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/contact/">Contact</a></li><li><a href="/wholesale/">Wholesale</a></li></ul></div><div class="foot-col"><h4>Support</h4><ul><li><a href="/how-to-order/">Payment Methods</a></li><li><a href="/contact/">Order Support</a></li><li><a href="/wholesale/">Wholesale Inquiry</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/terms-of-service/">Terms of Service</a></li></ul></div></div><div class="foot-bottom"><p class="foot-copy">&copy; 2026 Fifty Bar Vape. Built In The USA 🇺🇸</p><div class="foot-legal"><a href="/privacy-policy/">Privacy</a><a href="/terms-of-service/">Terms</a><a href="/wholesale/">Wholesale</a><a href="/contact/">Contact</a></div></div><p class="foot-age">WARNING: This product contains nicotine. Nicotine is an addictive chemical. For adult use only. Must be 21+.</p></footer>
+
+<div class="toast" id="site-toast" role="alert" aria-live="assertive"></div>
+
+<!-- ALL scripts load first, THEN checkout logic runs -->
+<script src="/js/products.js?v=3"></script>
+<script src="/js/cart.js?v=3"></script>
+<script src="/js/app.js?v=3"></script>
+<script src="/js/livechat.js?v=3"></script>
+
+<!-- Checkout logic — runs after all JS files loaded -->
+<script>
+/* ── Generate order number ── */
+function generateOrderNumber() {
+  var prefix = 'FBV';
+  var timestamp = Date.now().toString(36).toUpperCase(); // base-36 timestamp
+  var rand = Math.random().toString(36).substr(2, 4).toUpperCase();
+  return prefix + '-' + timestamp + '-' + rand;
+}
+
+/* ── Init checkout page ── */
+(function() {
+  function initCheckout() {
+    if (typeof renderCheckoutItems === 'function') renderCheckoutItems();
+    if (typeof renderCheckoutTotals === 'function') renderCheckoutTotals();
+    document.querySelectorAll('[name="pay_method"]').forEach(function(r) {
+      r.addEventListener('change', function() {
+        if (typeof renderCheckoutTotals === 'function') renderCheckoutTotals();
+      });
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCheckout);
+  } else {
+    initCheckout();
+  }
+})();
+
+/* ── Place Order ── */
+function handlePlaceOrder() {
+  var form = document.getElementById('checkout-form');
+
+  var fname   = form.querySelector('[name="fname"]').value.trim();
+  var lname   = form.querySelector('[name="lname"]').value.trim();
+  var email   = form.querySelector('[name="email"]').value.trim();
+  var address = form.querySelector('[name="address"]').value.trim();
+  var city    = form.querySelector('[name="city"]').value.trim();
+  var state   = form.querySelector('[name="state"]').value.trim();
+  var zip     = form.querySelector('[name="zip"]').value.trim();
+  var phone   = form.querySelector('[name="phone"]').value.trim();
+  var notes   = form.querySelector('[name="notes"]').value.trim();
+  var payRadio = document.querySelector('[name="pay_method"]:checked');
+
+  if (!fname || !lname)             { showToast('Please enter your name', ''); return; }
+  if (!email || !email.includes('@')){ showToast('Please enter a valid email address', ''); return; }
+  if (!address || !city || !state || !zip) { showToast('Please complete your shipping address', ''); return; }
+  if (!payRadio)                    { showToast('Please select a payment method', ''); return; }
+
+  var pay = payRadio.value;
+  var t   = Cart.totals(pay);
+
+  if (!Cart._items.length)  { showToast('Your cart is empty', ''); return; }
+  if (!t.minOk) { showToast('Minimum order is $' + FBV.rules.minOrder + '. Add $' + (FBV.rules.minOrder - t.sub).toFixed(2) + ' more.', ''); return; }
+
+  var btn = document.getElementById('place-order-btn');
+  btn.textContent = 'Placing Order...';
+  btn.disabled = true;
+
+  /* Generate unique order number */
+  var orderNum = generateOrderNumber();
+
+  var payLabels = { 'apple-pay':'Apple Pay', 'cash-app':'Cash App', 'chime':'Chime', 'crypto':'Crypto (BTC/ETH/LTC)' };
+  var payLabel = payLabels[pay] || pay;
+
+  var itemLines = Cart._items.map(function(item) {
+    var p   = FBV.getById(item.id);
+    var cat = FBV.getCat(p ? p.cat : '');
+    return '  ' + item.qty + 'x ' + (p ? p.name : item.id) + ' (' + (cat ? cat.label : '') + ') = $' + (p ? (p.price * item.qty).toFixed(2) : '0.00');
+  }).join('\n');
+
+  var discLine = t.disc > 0 ? ('Crypto Discount: -$' + t.disc.toFixed(2) + '\n') : '';
+
+  var message =
+    orderNum + '\n\n' +
+    fname + ' ' + lname + '\n' +
+    email + '\n' +
+    (phone || 'No phone') + '\n' +
+    address + ', ' + city + ', ' + state + ' ' + zip + '\n' +
+    payLabel + '\n\n' +
+    itemLines + '\n\n' +
+    'Subtotal $' + t.sub.toFixed(2) + '\n' +
+    discLine +
+    'Shipping ' + (t.ship === 0 ? 'FREE' : '$' + t.ship.toFixed(2)) + '\n' +
+    'Total $' + t.total.toFixed(2) + '\n' +
+    (notes ? ('Notes: ' + notes) : '');
+
+  /* Payload — _cc forces a direct copy to your inbox even if spam filter catches it */
+  var payload = {
+    name:     fname + ' ' + lname,
+    email:    email,
+    _replyto: email,
+    recipient: 'info@thefiftybar.org',
+    _subject: 'Order ' + orderNum + ' - ' + fname + ' ' + lname + ' - $' + t.total.toFixed(2),
+    message:  message
+  };
+
+  fetch('https://formspree.io/f/mojbqrgg', {
+    method:  'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body:    JSON.stringify(payload)
+  })
+  .then(function(res) {
+    return res.json().then(function(data) {
+      return { status: res.status, ok: res.ok, data: data };
+    }).catch(function() {
+      return { status: res.status, ok: res.ok, data: {} };
+    });
+  })
+  .then(function(result) {
+    if (result.ok && !result.data.errors) {
+      /* SUCCESS — clear cart, show confirmation with order number */
+      Cart.clear();
+      /* Inject order number into success screen */
+      var orderNumEl = document.getElementById('success-order-number');
+      if (orderNumEl) orderNumEl.textContent = orderNum;
+      document.getElementById('checkout-form-wrap').style.display = 'none';
+      document.getElementById('checkout-success').style.display = 'block';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      var errMsg = result.data.errors
+        ? result.data.errors.map(function(e){ return e.message; }).join(', ')
+        : 'Status ' + result.status;
+      showToast('Order error: ' + errMsg + '. Call (562) 732-4044', '');
+      btn.textContent = 'Place Order →';
+      btn.disabled = false;
+    }
+  })
+  .catch(function(err) {
+    showToast('Network error. Call (562) 732-4044 or email info@thefiftybar.org', '');
+    btn.textContent = 'Place Order →';
+    btn.disabled = false;
+  });
+}
+</script>
+
+</body>

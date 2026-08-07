@@ -1,0 +1,35 @@
+# robots.txt — thefiftybar.org
+User-agent: *
+Allow: /
+Disallow: /checkout/
+
+# Block legacy WordPress paths (no longer used)
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /wp-includes/
+
+# ── AI / LLM crawlers: explicitly allowed (citation visibility) ──
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://thefiftybar.org/sitemap.xml
