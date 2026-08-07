@@ -1,7 +1,6 @@
 # robots.txt — thefiftybar.org
 User-agent: *
 Allow: /
-Disallow: /checkout/
 
 # Block legacy WordPress paths (no longer used)
 Disallow: /wp-admin/
@@ -13,37 +12,26 @@ Content-Signal: search=yes, ai-input=yes, ai-train=no
 # ── AI / LLM crawlers: explicitly allowed (citation visibility) ──
 User-agent: GPTBot
 Allow: /
-Disallow: /checkout/
 User-agent: OAI-SearchBot
 Allow: /
-Disallow: /checkout/
 User-agent: ChatGPT-User
 Allow: /
-Disallow: /checkout/
 User-agent: ClaudeBot
 Allow: /
-Disallow: /checkout/
 User-agent: anthropic-ai
 Allow: /
-Disallow: /checkout/
 User-agent: Claude-Web
 Allow: /
-Disallow: /checkout/
 User-agent: PerplexityBot
 Allow: /
-Disallow: /checkout/
 User-agent: Perplexity-User
 Allow: /
-Disallow: /checkout/
 User-agent: Google-Extended
 Allow: /
-Disallow: /checkout/
 User-agent: CCBot
 Allow: /
-Disallow: /checkout/
 User-agent: Applebot-Extended
 Allow: /
-Disallow: /checkout/
 
 # Agent-readable resources
 # llms.txt: https://thefiftybar.org/llms.txt

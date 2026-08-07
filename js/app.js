@@ -252,11 +252,32 @@ document.querySelectorAll('.newsletter-form').forEach(form => {
   form.addEventListener('submit', async e => {
     e.preventDefault();
     const btn = form.querySelector('[type=submit]');
+    const orig = btn.textContent;
     btn.textContent = 'Subscribing…'; btn.disabled = true;
-    await new Promise(r => setTimeout(r, 700));
-    showToast('Subscribed! Welcome to Fifty Bar.', 'success');
-    form.reset();
-    btn.textContent = 'Subscribe'; btn.disabled = false;
+    const data = {};
+    new FormData(form).forEach((val, key) => { data[key] = val; });
+    data['_subject'] = 'Newsletter Signup - thefiftybar.org';
+    data['_replyto'] = data['email'] || '';
+    data['form_type'] = 'Newsletter Signup';
+    data['recipient'] = 'info@thefiftybar.org';
+    try {
+      const res = await fetch('https://formspree.io/f/mojbqrgg', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      const resp = await res.json();
+      if (res.ok && !resp.errors) {
+        showToast('Subscribed! Welcome to Fifty Bar.', 'success');
+        form.reset();
+      } else {
+        const msg = resp.errors ? resp.errors.map(e => e.message).join(', ') : 'Submission failed';
+        throw new Error(msg);
+      }
+    } catch(err) {
+      showToast('Error: ' + err.message + '. Email us: info@thefiftybar.org', '');
+    }
+    btn.textContent = orig; btn.disabled = false;
   });
 });
 
