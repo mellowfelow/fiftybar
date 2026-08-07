@@ -5,7 +5,7 @@
   http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://thefiftybar.org/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-08-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -65,7 +65,7 @@
   </url>
   <url>
     <loc>https://thefiftybar.org/about/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-08-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
