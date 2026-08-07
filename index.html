@@ -36,68 +36,12 @@
   <meta name="google-site-verification" content="lE6_0bSYx4j97fDS6htFasDAIJF3R1Qy74LUc_r11u0" />
   <!-- Bing Webmaster Tools: verified automatically when site is imported from GSC -->
   <!-- <meta name="msvalidate.01" content="YOUR_BING_CODE_HERE"> -->
-  <script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": [
-    "Store",
-    "Organization"
-  ],
-  "@id": "https://thefiftybar.org/#organization",
-  "name": "Fifty Bar Vape",
-  "url": "https://thefiftybar.org",
-  "logo": "https://thefiftybar.org/images/logo.webp",
-  "description": "The only disposable vape built and filled in the USA. 7 collections, 70+ American-made flavors.",
-  "telephone": "+15627324044",
-  "address": {
-    "@type": "PostalAddress",
-    "addressCountry": "US"
-  },
-  "sameAs": [
-    "https://thefiftybar.org",
-    "https://www.instagram.com/officialfiftybar"
-  ],
-  "areaServed": {
-    "@type": "Country",
-    "name": "United States"
-  },
-  "numberOfItems": 70,
-  "priceRange": "$18.99 - $24.99",
-  "knowsAbout": [
-    "Disposable vapes",
-    "Fifty Bar flavors",
-    "USA-made vapes",
-    "20000 puff vapes",
-    "6500 puff vapes"
-  ],
-  "makesOffer": {
-    "@type": "AggregateOffer",
-    "priceCurrency": "USD",
-    "lowPrice": "18.99",
-    "highPrice": "24.99",
-    "offerCount": "70"
-  }
-}</script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@id": "https://thefiftybar.org/#website",
-    "url": "https://thefiftybar.org",
-    "name": "Fifty Bar Vape",
-    "publisher": {"@id": "https://thefiftybar.org/#organization"},
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": {"@type": "EntryPoint", "urlTemplate": "https://thefiftybar.org/shop/?q={search_term_string}"},
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Organization",
+        "@type": ["Store", "Organization"],
         "@id": "https://thefiftybar.org/#organization",
         "name": "Fifty Bar Vape",
         "url": "https://thefiftybar.org",
@@ -111,10 +55,27 @@
           "caption": "Fifty Bar Vape"
         },
         "image": {"@id": "https://thefiftybar.org/#logo"},
-        "description": "The only disposable vape built and filled in the USA. 7 collections, 70+ flavors, up to 20,000 puffs.",
+        "description": "The only disposable vape built and filled in the USA. 7 collections, 70+ American-made flavors.",
         "telephone": "+15627324044",
         "address": {"@type": "PostalAddress", "addressCountry": "US"},
-        "sameAs": ["https://thefiftybar.org","https://www.instagram.com/officialfiftybar"]
+        "sameAs": ["https://www.instagram.com/officialfiftybar"],
+        "areaServed": {"@type": "Country", "name": "United States"},
+        "numberOfItems": 70,
+        "priceRange": "$18.99 - $24.99",
+        "knowsAbout": [
+          "Disposable vapes",
+          "Fifty Bar flavors",
+          "USA-made vapes",
+          "20000 puff vapes",
+          "6500 puff vapes"
+        ],
+        "makesOffer": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "USD",
+          "lowPrice": "18.99",
+          "highPrice": "24.99",
+          "offerCount": "70"
+        }
       },
       {
         "@type": "WebSite",

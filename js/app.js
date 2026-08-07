@@ -130,6 +130,14 @@
   overlay.addEventListener('click',e=>{if(e.target===overlay)overlay.classList.remove('open');});
   document.addEventListener('keydown',e=>{if(e.key==='Escape')overlay.classList.remove('open');});
 
+  /* Deep-link support: /shop/?q=mango opens search pre-filled (matches SearchAction schema) */
+  const qParam=new URLSearchParams(location.search).get('q');
+  if(qParam){
+    input.value=qParam;
+    overlay.classList.add('open');
+    input.dispatchEvent(new Event('input'));
+  }
+
   let timer;
   input.addEventListener('input',()=>{
     clearTimeout(timer);
